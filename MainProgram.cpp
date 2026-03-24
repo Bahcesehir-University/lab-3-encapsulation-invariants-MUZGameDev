@@ -88,11 +88,11 @@ public:
         // TODO: Validate and set members
         if(owner == "" || initialBalance < 0)
         {
-            throw invalid_argument("Invalid amount");
+            throw invalid_argument("Invalid owner or balance");
         }
         
         owner_ = owner;
-        initialBalance = balance_;
+        balance_ = initialBalance;
     }
 
     // Getter: return the owner's name
